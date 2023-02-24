@@ -10,8 +10,8 @@ function App() {
     alert("please enter amount");
     }else{
       var options = {
-        key: "rzp_test_ffSb2yIkIflJH9",
-        key_secret:"iExGzM7nCvTIo41Rk4iV9kye",
+        key: "rzp_test_zW8LTEGZIj7Tye",
+        key_secret:"mV239hwnXhUqjPmn6GXNmXaM",
         amount: amount *100,
         currency:"INR",
         name:"STARTUP_PROJECTS",
@@ -20,9 +20,9 @@ function App() {
           alert(response.razorpay_payment_id);
         },
         prefill: {
-          name:"Velmurugan",
-          email:"mvel1620r@gmail.com",
-          contact:"7904425033"
+          name:"Shaikh Fais",
+          email:"faiss7860@gmail.com",
+          contact:"7276272453"
         },
         notes:{
           address:"Razorpay Corporate office"
@@ -37,11 +37,11 @@ function App() {
   }
   return (
     <div className="App">
-     <h2>Razorpay Payment Integration Using React</h2>
-     <br/>
-     <input type="text"placeholder='Enter Amount'value={amount}onChange={(e)=>setamount(e.target.value)} />
-     <br/><br/>
-     <button onClick={handleSubmit}>submit</button>
+      <h2>Razorpay Payment Integration Using React</h2>
+      <br/>
+      <input type="text"placeholder='Enter Amount'value={amount}onChange={(e)=>setamount(e.target.value)} />
+      <br/><br/>
+      <button onClick={handleSubmit}>submit</button>
     </div>
   );
 }
